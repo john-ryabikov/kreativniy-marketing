@@ -13,11 +13,11 @@
     "react": "^18",
     "react-dom": "^18",
     "react-player": "^2.16.0",
+    "react-tinkoff-pay": "^2.8.7",
     "sass": "^1.77.2"
   },
   "devDependencies": {
     "postcss": "^8",
-    "react-tinkoff-pay": "^2.8.7",
     "tailwindcss": "^3.4.1"
   }
 }
