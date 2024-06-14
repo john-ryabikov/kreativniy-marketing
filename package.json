@@ -9,12 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.3"
+    "react-player": "^2.16.0",
+    "sass": "^1.77.2"
   },
   "devDependencies": {
     "postcss": "^8",
+    "react-tinkoff-pay": "^2.8.7",
     "tailwindcss": "^3.4.1"
   }
 }
