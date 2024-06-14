@@ -5,7 +5,7 @@ import Tinkoff from 'react-tinkoff-pay'
 export default function TinkCash() {
 
   const form = {	
-    terminalkey: process.env.TERMINAL_KEY,
+    terminalkey: process.env.NEXT_PUBLIC_TERMINAL_KEY,
     frame: 'true',
     language: 'ru',
     amount: '65000'
