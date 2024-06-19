@@ -8,12 +8,13 @@ module.exports = {
   theme: {
     extend: {
       screens: {
+        "sm": "430px",
         "2xl": "1430px"
       },
       backgroundImage: {
         'main-fon': "url('/img/Section-1/main_bg.jpg')",
         'main-fon-mob': "url('/img/Section-1/main_bg_mob.png')",
-        'main-gradient': "linear-gradient(165deg, rgba(52, 61, 78, 0.2) 0%, rgba(14, 21, 30, 0.2) 58%, rgba(25, 25, 39, 0.2) 100%)"
+        'main-gradient': "linear-gradient(165deg, rgba(114, 122, 136, 0.2) 0%, rgba(14, 21, 30, 0.2) 58%, rgba(84, 83, 142, 0.2) 100%)"
       },
     },
   },

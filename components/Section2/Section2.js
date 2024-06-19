@@ -1,32 +1,29 @@
-import Cert from "@components/UI/Cert";
-import MainVideo from "@components/UI/MainVideo";
-import { certs } from "@data/certificates";
 import Title from "@components/UI/Title";
-import WrapperCard from "@components/UI/WrapperCard";
+import Method1 from "./Method1";
+import Method2 from "./Method2";
+import VideoBlock1 from "@components/UI/VideoBlock1";
+import VideoBlock2 from "@components/UI/VideoBlock2";
+import { video_1, video_2, video_3, video_4, video_5 } from "@data/videos";
 
 export default function Section2() {
   return (
-    <section className='relative w-full mt-[70px] flex flex-col items-center justify-start'>
-        <Title title="В чем ценность нашего продукта?"/>
-        <WrapperCard>
-            <div className='relative w-full xl:w-[1200px] flex flex-col xl:flex-row items-center justify-start xl:justify-between'>
-                <div className='relative w-full xl:w-[620px] flex flex-col items-center justify-start'>
-                    <p className='relative text-center xl:text-left font-extralight text-[#7c7c7c] text-[16px] xl:text-2xl mb-[60px] xl:leading-[160%]'>
-                        У нас есть доступ к разным приятным сертификатам. Каждый найдет для себя что ему нужнее и получит все бесплатно после покупки Вашего товара.
-                    </p>
-                    <div className='relative w-full xl:w-[620px] flex flex-wrap justify-center xl:justify-between'>
-                        {certs.map((cert, i) => (
-                            <Cert key={i}>
-                                <div className='absolute top-[50%] left-[6px] -translate-y-2/4 w-[48px] h-[48px] bg-[#D9D9D9] opacity-[0.05] block rounded-full'></div>
-                                <p className='relative w-[180px] text-start font-bold text-[14px]'>{cert.title}</p>
-                                <img src="/img/Icons/cert_icon.svg" alt=">"/>
-                            </Cert>
-                        ))}
-                    </div>
-                </div>
-                <MainVideo/>
-            </div>
-        </WrapperCard>
+    <section className='section mt-[70px] xl:mt-[120px]'>
+        <Title title="Как это все работает?"/>
+        <div className='relative w-screen xl:w-[1200px] flex flex-col items-center justify-start'>
+          <Method1 
+              title="1. Реклама от блогеров" 
+              subtitle="Блогеры, которых мы подбираем не заезжаны рекламой и имеют свою аудиторию, которая им доверяет, а мы в свою очередь размещаем информацию о Вашем продукте с большей ценностью на новую аудиторию."
+          />
+          <VideoBlock1 videos={video_1}/>
+          <Method2 title="2. Делаем брендам 1 000 000 просмотров"/>
+          <VideoBlock2 videos={video_2} height="xl:h-[1100px]"/>
+          <Method2 title="3. Примеры работ с поставщиками и отзывами от них"/>
+          <VideoBlock2 videos={video_3}/>
+          <Method1 title="4. Продвижение фулфилмента" mb="12" mb_xl="[100px]"/>
+          <VideoBlock1 videos={video_4}/>
+          <Method1 title="5. Примеры работ с таргетом"/>
+          <VideoBlock1 videos={video_5}/>
+        </div>
     </section>
   )
 }

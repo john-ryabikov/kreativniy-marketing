@@ -1,23 +1,40 @@
-import { links } from "@data/links";
-import Link from "next/link";
+import FooterRights from "./FooterRights"
+import FooterLinks from "./FooterLinks"
+import FooterSoc from "./FooterSoc"
+
+const buttons = [
+  {
+    id: 1,
+    title: "Связаться с директором:",
+    href: "/",
+    btn_text: "@Vyachtslavv",
+    btn_icon: "/img/Icons/tg_icon.svg",
+    color: "bg-[#0088CC]"
+  },
+  {
+    id: 2,
+    title: "Подписывайтесь на Yotube:",
+    href: "/",
+    btn_text: "Наш Yotube-канал",
+    btn_icon: "/img/Icons/tg_icon.svg",
+    color: "bg-[#FF0000]"
+  }
+]
 
 export default function Footer() {
   return (
-    <footer className='relative w-screen px-8 py-7 mt-10 flex flex-col items-center justify-start bg-[#000000]'>
-      <div className='relative w-full xl:w-[1280px] flex flex-row items-center justify-between border-b-[1px] border-[#272727] pb-8'>
-        <img className="w-[50px]" src="/img/Section-1/logo.png" alt="Logo"/>
-        <p className='relative flex flex-col items-end justify-center text-xs text-end text-white font-extralight'>
-          <span className='mb-2'>Разработка:<a className='text-[#4E618A] font-bold ml-1 transition-all hover:text-[#1F5FE9]' href="https://just-site.ru" target="_blank" rel="nofollow">Just-site.ru</a></span>
-          <span>© 2024 Все права защищены.</span>
-        </p>
+    <footer className='section mt-[70px] xl:mt-[120px] pb-10'>
+      <div className='relative w-full flex flex-col items-center justify-start border-b-[1px] border-[#272727] pb-12 xl:pb-[60px]'>
+        <h3 className='relative w-[335px] xl:w-[1200px] font-extralight text-white text-center text-3xl xl:text-[64px]'>Стоимость работы уточняйте</h3>
+        <div className='relative w-[335px] xl:w-[800px] flex flex-col xl:flex-row justify-start xl:justify-between mt-10 xl:mt-[60px]'>
+            {buttons.map((btn) => (
+              <FooterSoc key={btn.id} title={btn.title} href={btn.href} btn_text={btn.btn_text} icon={btn.btn_icon} btn_color={btn.color}/>
+            ))}
+        </div>
       </div>
-      <div className='relative w-full xl:w-[1280px] flex flex-col xl:flex-row items-center justify-start xl:justify-between mt-8'>
-        <p className='relative text-center xl:text-left font-extralight text-[#848484] text-base mb-8'>ИНН 505306466592<br/>ОГРН 321508100079173<br/>ИП ВЯЧЕСЛАВ БЫЧКОВ ВАДИМОВИЧ</p>
-        <p className='relative flex flex-col items-center xl:items-end font-extralight text-[#848484] text-xs'>
-          {links.map((link, i) => (
-            <Link key={i} className='relative inline-block mb-1 last:mb-0 xl:text-right hover:text-[#C0C0C0] transition-all' href={link.href} target="_blank">{link.cont}</Link>
-          ))}
-        </p>
+      <div className='relative w-[335px] xl:w-[1200px] flex flex-col items-center justify-start mt-8'>
+        <FooterRights/>
+        <FooterLinks/>
       </div>
     </footer>
   )
