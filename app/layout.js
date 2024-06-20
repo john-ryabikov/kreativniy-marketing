@@ -9,12 +9,18 @@ const manrope = Manrope({
 });
 
 export const metadata = {
-  title: "",
-  description: "",
+  title: "Продвижение ваших товаров на OZON и Wildberries",
+  description: "Программа для предпринимателей, которые не хотят тестировать новые каналы рекламы, а взять уже готовый рабочий вариант.",
+  authors: [{ name: 'Just-Site.ru' }],
   keywords: "",
-  robots: "",
-  formatDirection: "",
-  yandexVerification: ""
+  robots: "noyaca",
+  formatDirection: {
+    telephone: false,
+  },
+  verification: {
+    yandex: 'dedf19563558eede'
+  }
+
 };
 
 export default function RootLayout({ children }) {

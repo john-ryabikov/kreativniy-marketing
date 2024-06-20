@@ -7,11 +7,11 @@ body {
   position: relative; 
   margin: 0; 
   padding: 0; 
-  overflow-x: hidden; 
   max-width: 100vw; 
   background-color: #0E0E0F;
   font-family: var(--manrope), sans-serif; 
   color: #ffffff;
+  overflow: hidden;
 }
 .main {  
   @apply relative m-0 p-0 flex flex-col items-center justify-between px-4 w-screen bg-main-fon-mob xl:bg-main-fon bg-cover
