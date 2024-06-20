@@ -9,7 +9,7 @@ const manrope = Manrope({
 });
 
 export const metadata = {
-  title: "Продвижение ваших товаров на OZON и Wildberries",
+  title: "Креативный маркетинг | Продвижение Ваших товаров на OZON и Wildberries",
   description: "Программа для предпринимателей, которые не хотят тестировать новые каналы рекламы, а взять уже готовый рабочий вариант.",
   authors: [{ name: 'Just-Site.ru' }],
   keywords: "",

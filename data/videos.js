@@ -107,3 +107,16 @@ export const video_5 = [
         prev: "/img/VideoBlock-1/video_1-3-3_prev.png"
     }
 ]
+
+export const video_6 = [
+    {
+        id: 1,
+        href: "/img/VideoBlock-1/video_1-4-1.mp4",
+        prev: "/img/VideoBlock-1/video_1-4-1_prev.png"
+    },
+    {
+        id: 2,
+        href: "/img/VideoBlock-1/video_1-4-2.mp4",
+        prev: "/img/VideoBlock-1/video_1-4-2_prev.png"
+    }
+]

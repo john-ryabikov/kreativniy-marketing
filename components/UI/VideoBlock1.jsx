@@ -4,8 +4,15 @@ import {useState, useEffect} from 'react'
 import ReactPlayer from "react-player"
 import { motion } from 'framer-motion';
 
+const images = [
+  {
+    id: 1,
+    src: "/img/VideoBlock-1/video_1-4-3_prev.jpg"
+  }
+]
 
-export default function VideoBlock1({ videos }) {
+
+export default function VideoBlock1({ videos, imgs }) {
 
   const [hasWindow, setHasWindow] = useState(false);
 
@@ -25,11 +32,9 @@ export default function VideoBlock1({ videos }) {
         viewport={{once: true}}
         transition={{delay: 0.85}}
       >
-        <div 
-          className='absolute xl:w-[1180px] top-0 left-0 xl:left-1/2 xl:-translate-x-1/2 flex flex-row items-center justify-start xl:justify-between px-6 sm:px-10'
-        >
+        <div className='absolute xl:w-[1180px] top-0 left-0 xl:left-1/2 xl:-translate-x-1/2 flex flex-row items-center justify-start xl:justify-between px-6 sm:px-10'>
           {videos.map((video) => (
-            <div key={video.id} className={`relative w-[200px] xl:w-[296px] h-[348px] xl:h-[518px] flex flex-col items-center justify-center overflow-hidden rounded-[15px] xl:rounded-[30px] group mr-8 last:mr-0 xl:mr-0 mt-10 xl:mt-0 border border-solid cursor-pointer`}>
+            <div key={video.id} className='relative w-[200px] xl:w-[296px] h-[348px] xl:h-[518px] flex flex-col items-center justify-center overflow-hidden rounded-[15px] xl:rounded-[30px] group mr-8 last:mr-0 xl:mr-0 mt-10 xl:mt-0 border border-solid cursor-pointer'>
                 <ReactPlayer
                   url={video.href}
                   width={"100%"}
@@ -41,6 +46,15 @@ export default function VideoBlock1({ videos }) {
                 />
             </div>
           ))}
+          {imgs && (
+              <>
+                {images.map((image) => (
+                  <div key={image.id} className='relative w-[200px] xl:w-[296px] h-[348px] xl:h-[518px] flex flex-col items-center justify-center overflow-hidden rounded-[15px] xl:rounded-[30px] group mr-8 last:mr-0 xl:mr-0 mt-10 xl:mt-0 border border-solid'>
+                    <img className='w-full' src={image.src} alt=""/>
+                  </div>
+                ))}
+              </>
+            )}
         </div>
       </motion.div>  
     }

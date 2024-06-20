@@ -3,7 +3,7 @@ import Method1 from "./Method1";
 import Method2 from "./Method2";
 import VideoBlock1 from "@components/UI/VideoBlock1";
 import VideoBlock2 from "@components/UI/VideoBlock2";
-import { video_1, video_2, video_3, video_4, video_5 } from "@data/videos";
+import { video_1, video_2, video_3, video_4, video_5, video_6 } from "@data/videos";
 import SectionAnimated from "@components/UI/Animated/SectionAnimated";
 
 export default function Section2() {
@@ -24,6 +24,11 @@ export default function Section2() {
           <VideoBlock1 videos={video_4}/>
           <Method1 title="5. Примеры работ с таргетом"/>
           <VideoBlock1 videos={video_5}/>
+          <Method1 
+              title="6. Как пишут нам Ваши клиенты" 
+              subtitle="Примеры, как люди после покупки Вашего продукта пишут нам, а мы выдаем им подарки."
+          />
+          <VideoBlock1 videos={video_6} imgs={true}/>
         </div>
     </SectionAnimated>
   )
