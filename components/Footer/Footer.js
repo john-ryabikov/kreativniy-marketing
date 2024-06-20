@@ -17,7 +17,7 @@ const buttons = [
     title: "Больше видео на Yotube:",
     href: "https://www.youtube.com/@reklama.y.blogerov",
     btn_text: "Наш Yotube-канал",
-    btn_icon: "/img/Icons/tg_icon.svg",
+    btn_icon: "/img/Icons/ytb_icon.svg",
     color: "bg-[#FF0000]"
   }
 ]
