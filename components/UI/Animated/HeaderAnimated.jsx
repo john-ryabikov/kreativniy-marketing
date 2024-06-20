@@ -10,7 +10,7 @@ export default function HeaderAnimated({ children }) {
           initial={{opacity: 0}}
           whileInView={{opacity: 1}}
           viewport={{once: true}}
-          transition={{duration: 0.1, delay: 0}}
+          transition={{duration: 0.1, delay: 0.5}}
         >
           {children}
         </motion.header>

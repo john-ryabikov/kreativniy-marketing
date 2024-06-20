@@ -11,6 +11,7 @@ export default function SectionAnimated({ children, section }) {
           initial={{y: 50, opacity: 0}}
           whileInView={{y: 0, opacity: 1}}
           viewport={{once: true}}
+          transition={{ delay: 0.85 }}
         >
           {children}
         </motion.section>
