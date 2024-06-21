@@ -75,7 +75,7 @@ export const video_3 = [
 export const video_4 = [
     {
         id: 1,
-        href: "/img/VideoBlock-1/video_1-2-1.mp4",
+        href: "/img/VideoBlock-1/video_1-2-1.MP4",
         prev: "/img/VideoBlock-1/video_1-2-1_prev.png"
     },
     {
