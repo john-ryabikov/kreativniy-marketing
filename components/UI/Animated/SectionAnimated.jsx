@@ -39,6 +39,17 @@ export default function SectionAnimated({ children, section }) {
           {children}
         </motion.section>
       )}
+      {section === "section-4" && (
+        <motion.section 
+          className="section mt-[70px] xl:mt-[140px]"
+          initial={{y: 50, opacity: 0}}
+          transition={{ delay: 0.5 }}
+          whileInView={{y: 0, opacity: 1}}
+          viewport={{once: true}}
+        >
+          {children}
+        </motion.section>
+      )}
     </>
   )
 }
