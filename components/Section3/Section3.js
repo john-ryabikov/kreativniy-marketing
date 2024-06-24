@@ -25,13 +25,14 @@ export default function Section3() {
                             </Cert>
                         ))}
                     </div>
-                    <p className='relative w-full text-center xl:text-left font-extralight text-white opacity-30 text-base xl:text-2xl mb-12 xl:leading-[160%]'>
+                    <p className='relative w-full text-center xl:text-left font-extralight text-white opacity-30 text-base xl:text-2xl xl:leading-[160%]'>
                         Каждого блогера согласовываем с селером,подробный пример в работе с поставщиком на видео.
                     </p>
-                    <ButtonMethod href="https://saleanalytics.tilda.ws" text="Примеры продвижения отдельных артикулов" img="/img/Icons/arrow_right_icon.svg" alt=">" color="bg-[#FF0066]"/>
                 </div>
                 <VideoBlock3/>
         </WrapperCard>
+        <h2 className='relative w-[335px] xl:w-[1200px] font-extralight text-white text-center text-3xl xl:text-[64px] my-12 xl:mb-[70px] xl:mt-[120px]'>Примеры отдельных артикулов</h2>
+        <ButtonMethod href="https://saleanalytics.tilda.ws" text="Примеры продвижения отдельных артикулов" img="/img/Icons/arrow_right_icon.svg" alt=">" color="bg-[#FF0066]"/>
     </SectionAnimated>
   )
 }
