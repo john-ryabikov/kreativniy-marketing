@@ -32,7 +32,7 @@ export default function Section3() {
                 <VideoBlock3/>
         </WrapperCard>
         <h2 className='relative w-[335px] xl:w-[1200px] font-extralight text-white text-center text-3xl xl:text-[64px] my-12 xl:mb-[70px] xl:mt-[120px]'>Примеры отдельных артикулов</h2>
-        <ButtonMethod href="https://saleanalytics.tilda.ws" text="Примеры продвижения отдельных артикулов" img="/img/Icons/arrow_right_icon.svg" alt=">" color="bg-[#FF0066]"/>
+        <ButtonMethod href="https://saleanalytics.tilda.ws" text="Продвижение артикулов" img="/img/Icons/arrow_right_icon.svg" alt=">" color="bg-[#FF0066]"/>
     </SectionAnimated>
   )
 }
