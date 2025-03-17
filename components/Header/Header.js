@@ -4,12 +4,12 @@ import Link from "next/link";
 const links = [
   {
     id: 1,
-    href: "https://www.youtube.com/@reklama.y.blogerov",
+    href: "/",
     icon: "/img/Icons/ytb_button_header.svg"
   },
   {
     id: 2,
-    href: "https://t.me/Vyachtslavv",
+    href: "/",
     icon: "/img/Icons/tg_button_header.svg"
   },
 ]
