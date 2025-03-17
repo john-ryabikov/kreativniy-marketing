@@ -3,17 +3,17 @@ import Link from "next/link"
 const links = [
     {
         id: 1,
-        href: "https://kreativniy-marketing.ru/libs/blanks/Политика%20конфиденциальности%20персональных%20данных.pdf",
+        href: "/",
         cont: "Политика в отношении обработки персональных данных"
     },
     {
         id: 2,
-        href: "https://kreativniy-marketing.ru/libs/blanks/Договор.pdf",
+        href: "/",
         cont: "Договор оказания услуг по организации мероприятий"
     },
     {
         id: 3,
-        href: "https://kreativniy-marketing.ru/libs/blanks/Согласие%20на%20обработку%20персональных%20данных.pdf",
+        href: "/",
         cont: "Согласие на обработку персональных данных"
     }
 ]
