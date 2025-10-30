@@ -7,18 +7,10 @@ const buttons = [
   {
     id: 1,
     title: "Связаться с директором:",
-    href: "/",
+    href: "https://t.me/Vyachtslavv",
     btn_text: "@Viachtslavv",
     btn_icon: "/img/Icons/tg_icon.svg",
     color: "bg-[#0088CC]"
-  },
-  {
-    id: 2,
-    title: "Больше видео на Yotube:",
-    href: "/",
-    btn_text: "Наш Yotube-канал",
-    btn_icon: "/img/Icons/ytb_icon.svg",
-    color: "bg-[#FF0000]"
   }
 ]
 
