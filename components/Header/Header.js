@@ -5,13 +5,8 @@ const links = [
   {
     id: 1,
     href: "/",
-    icon: "/img/Icons/ytb_button_header.svg"
-  },
-  {
-    id: 2,
-    href: "/",
     icon: "/img/Icons/tg_button_header.svg"
-  },
+  }
 ]
 
 export default function Header() {
